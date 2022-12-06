@@ -1,0 +1,20 @@
+program to find amstrong or not
+
+n=int(input("enter a value:"))
+sum=0
+temp=n
+while n!=0:
+    r=n%10
+    sum=sum+(r*r*r)
+    n=n//10
+print(sum)
+if (temp==sum):
+    print("amstrong")
+else:
+    print("not amstrong")
+    
+    
+output:
+enter a value:153
+153
+amstrong
