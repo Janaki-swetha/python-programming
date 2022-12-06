@@ -1,0 +1,20 @@
+program to find palindrome or not
+
+n=int(input("enter a value:"))
+sum=0
+temp=n
+while n!=0:
+    r=n%10
+    sum=sum*10+r
+    n=n//10
+print(sum)
+if (temp==sum):
+    print("palindrome")
+else:
+    print("not palindrome")
+    
+    
+output:
+enter a value:123
+321
+not palindrome
