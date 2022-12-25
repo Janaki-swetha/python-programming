@@ -1,0 +1,8 @@
+n=int(input())
+l=list(map(int,input().split()))
+for i in range(n-1,-1,-1):
+    print(l[i],end=' ')
+OUTPUT:
+5
+3 6 8 3 2
+2 3 8 6 3
