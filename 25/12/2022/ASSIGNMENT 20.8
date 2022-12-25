@@ -1,0 +1,24 @@
+#Assignment -8:
+#Write a program to print leap years upto given range?
+n=int(input('enter a starting year:'))
+m=int(input('enter a ending year:'))
+while n<m:
+    if n%4==0 and n%100!=0 or n%400==0:
+        print(n)
+    n=n+1
+    
+output:
+enter a starting year:1950
+enter a ending year:2000
+1952
+1956
+1960
+1964
+1968
+1972
+1976
+1980
+1984
+1988
+1992
+1996
