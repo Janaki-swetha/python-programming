@@ -1,0 +1,23 @@
+#Assignment-9:
+#Write a program to print sum of n febnocci  series?
+
+n=int(input("enter a number:"))
+a=0
+b=1
+sum=0
+for i in range(n):
+    c=a+b
+    a=b
+    b=c
+    sum=sum+c
+    print(c)
+print(sum)
+
+output:
+enter a number:5
+1
+2
+3
+5
+8
+19
