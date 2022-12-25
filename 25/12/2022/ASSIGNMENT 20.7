@@ -1,0 +1,20 @@
+#Assignment -7:
+#Write a program to print given number is perfect or not?
+n=int(input("enter a number:"))
+i=1
+sum=0
+while i<n:
+    if n%i==0:
+        sum=sum+i
+    i=i+1
+print(sum)
+if sum==n:
+    print("given number is a perfect number")
+else:
+    print("given number is not perfect number")
+   
+   
+ output:
+ enter a number:6
+6
+given number is a perfect number
