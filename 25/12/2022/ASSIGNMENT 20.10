@@ -1,0 +1,16 @@
+x=int(input('enter the starting :'))
+y=int(input('enter the starting :'))
+count=0
+for i in range(x+1,y):
+    fact=0
+    for j in range(1,i):
+        if i%j==0:
+            fact=fact+1
+    if fact==1:
+        count=count+1
+print(count)
+
+output:
+enter the starting :1
+enter the starting :10
+4
