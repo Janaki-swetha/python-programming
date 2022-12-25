@@ -1,0 +1,9 @@
+n=int(input())
+root=n**(1/2)
+if root>10:
+    print('Hello')
+else:
+    print('Hi')
+OUTPUT:
+4
+Hi
