@@ -1,0 +1,35 @@
+'''Assignment:1
+Write a program to find the element from group of numbers and print whether element is found or not.
+Ex:
+6
+1 2 3 3 5 6
+4
+Output:
+Element is not found
+Input2:
+6
+1 2 3 3 5 6
+6
+Output:
+Element is found at index 5'''
+n=int(input())
+L=list(map(int,input().split()))
+x=int(input())
+if x in L :
+    print("element is found")
+    print(L.index(x))
+else:
+    print("element not found")
+    
+    output:
+    6
+1 2 3 3 5 6
+6
+element is found
+5
+
+
+6
+1 2 3 4 4 4
+7
+element not found
