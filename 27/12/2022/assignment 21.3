@@ -1,0 +1,29 @@
+'''Assignment 3:
+Write a program to implement binary search'''
+n=int(input())
+L=list(map(int,input().split()))
+x=int(input())
+low=0
+high=n-1
+mid=(low+high)//2
+flag=0
+while high>=low:
+    if x>L[mid]:
+        low=mid+1
+    elif x==L[mid]:
+        flag=1
+        break;
+    else:
+        high=mid-1
+    mid=(low+high)//2
+if flag==1:
+    print("element is foud at",mid,"index location")
+else:
+    print("element not found")
+
+
+output:
+5
+2 3 4 5 6
+6
+element is foud at 4 index location
