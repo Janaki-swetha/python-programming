@@ -1,0 +1,35 @@
+'''Assignment2:
+Write a program to find the element at different index locations from the duplicate list.
+Input:
+9
+1 7 9 4 5 1 7 9 0
+7
+Output:
+1 6
+7 is found at index 1 and 6
+Input2:
+9
+1 7 9 4 5 1 7 9 0
+14
+Output:
+-1
+If element is not found print -1'''
+n=int(input())
+L=list(map(int,input().split()))
+x=int(input())
+flag=0
+m=[]
+for i in range(0,n):
+    if L[i]==x:
+        m.append(i)
+        flag=flag+1
+if flag==0:
+    print("-1")
+else:
+    print(m)
+    
+output:
+9
+1 7 9 4 5 1 7  9 0
+14
+-1
