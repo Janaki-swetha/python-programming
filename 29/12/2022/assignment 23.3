@@ -1,0 +1,9 @@
+x=list(map(int,input().split()))
+arr=list(map(int,input().split()))
+for i in range(0,x[1]):
+    first=arr[0]
+    for j in range(0,x[0]-1):
+        arr[j]=arr[j+1]
+    arr[x[0]-1]=first
+for i in arr:
+    print(i,end=' ')
