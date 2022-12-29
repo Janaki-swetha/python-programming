@@ -1,0 +1,18 @@
+'''Write a program to count total even numbers from the list.
+Ex:
+5 
+1 5 63 5 2
+Output:
+1(only one even number ie.,2)'''
+n=int(input())
+count=0
+x=list(map(int,input().split()))
+for i in range(0,n):
+    if x[i]%2==0:
+        count=count+1
+print(count)       
+        
+output:
+5
+1 5 63 5 2
+1
