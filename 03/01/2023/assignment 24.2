@@ -1,0 +1,35 @@
+#assignment2:write a program to print left digonal values of the given #matrix
+n=int(input())
+sum1=0
+sum2=0
+A=[]
+for i in range(0,n):
+    L=[]
+    for j in range(0,n):
+        x=int(input())
+        L.append(x)
+    A.append(L)
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            sum1=sum1+A[i][j]
+        if i==j:
+            sum2=sum2+A[i][j]
+print(sum1)
+print(sum2)
+print(sum2-sum1)
+
+output:
+3
+1
+2
+3
+4
+5
+6
+7
+8
+9
+15
+15
+0
